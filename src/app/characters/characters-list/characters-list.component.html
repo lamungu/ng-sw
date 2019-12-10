@@ -1,0 +1,6 @@
+<h2>Characters</h2>
+<div>Search: <input [(ngModel)]="searchString" type="text" #box (keyup.enter)="onEnter(box.value)" name="character_search" id="character_search" /></div>
+
+<div *ngFor="let character of charactersList">
+	<span class="badge">{{ character.name }}</span>
+</div>
