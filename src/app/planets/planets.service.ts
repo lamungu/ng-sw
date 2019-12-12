@@ -13,6 +13,6 @@ export class PlanetsService {
 	baseUrl = 'http://localhost:8080/planets/';
 	
 	getPlanets() {
-		return this.http.get(this.baseUrl);
+		return this.http.get<any>(this.baseUrl);
 	}
 }

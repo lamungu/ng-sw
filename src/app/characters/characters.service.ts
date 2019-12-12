@@ -13,6 +13,6 @@ export class CharactersService {
 	baseUrl = 'http://localhost:8080/characters/';
 	
 	getCharacters(searchString) {
-		return this.http.get(this.baseUrl + searchString);
+		return this.http.get<any>(this.baseUrl + searchString);
 	}
 }
